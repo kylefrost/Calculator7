@@ -12,7 +12,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.window.backgroundColor = [NSColor colorWithRed:0.125 green:0.125 blue:0.125 alpha:1];
 }
 
 @end

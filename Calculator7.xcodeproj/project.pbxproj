@@ -18,6 +18,8 @@
 		27F3AE2D191ACB3E004A24C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F3AE0C191ACB3E004A24C6 /* Cocoa.framework */; };
 		27F3AE35191ACB3E004A24C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F3AE33191ACB3E004A24C6 /* InfoPlist.strings */; };
 		27F3AE37191ACB3E004A24C6 /* Calculator7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3AE36191ACB3E004A24C6 /* Calculator7Tests.m */; };
+		27F3AE42191ACB53004A24C6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3AE41191ACB53004A24C6 /* Math.m */; };
+		27F3AE45191ACD48004A24C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3AE44191ACD48004A24C6 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		27F3AE32191ACB3E004A24C6 /* Calculator7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calculator7Tests-Info.plist"; sourceTree = "<group>"; };
 		27F3AE34191ACB3E004A24C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27F3AE36191ACB3E004A24C6 /* Calculator7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator7Tests.m; sourceTree = "<group>"; };
+		27F3AE40191ACB53004A24C6 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		27F3AE41191ACB53004A24C6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		27F3AE43191ACD48004A24C6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27F3AE44191ACD48004A24C6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				27F3AE21191ACB3E004A24C6 /* MainMenu.xib */,
 				27F3AE24191ACB3E004A24C6 /* Images.xcassets */,
 				27F3AE13191ACB3E004A24C6 /* Supporting Files */,
+				27F3AE40191ACB53004A24C6 /* Math.h */,
+				27F3AE41191ACB53004A24C6 /* Math.m */,
+				27F3AE43191ACD48004A24C6 /* ViewController.h */,
+				27F3AE44191ACD48004A24C6 /* ViewController.m */,
 			);
 			path = Calculator7;
 			sourceTree = "<group>";
@@ -253,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F3AE20191ACB3E004A24C6 /* AppDelegate.m in Sources */,
+				27F3AE42191ACB53004A24C6 /* Math.m in Sources */,
+				27F3AE45191ACD48004A24C6 /* ViewController.m in Sources */,
 				27F3AE19191ACB3E004A24C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
