@@ -19,6 +19,7 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <viewController id="c4Q-hW-N8n" customClass="ViewController">
             <connections>
+                <outlet property="calculatorScreen" destination="gxX-Ee-WX8" id="wfu-w2-dRL"/>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="AOy-YB-f68"/>
             </connections>
         </viewController>
@@ -721,6 +722,9 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">=</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressEqual:" target="c4Q-hW-N8n" id="ksW-df-UPM"/>
+                        </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-P1-XM4">
                         <rect key="frame" x="159" y="1" width="80" height="80"/>
@@ -730,6 +734,9 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">.</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressDecimal:" target="c4Q-hW-N8n" id="c42-Td-wep"/>
+                        </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-Mo-e8h">
                         <rect key="frame" x="1" y="1" width="159" height="80"/>
@@ -739,8 +746,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">0</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="UwT-tI-gLK"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-kK-GdF">
+                    <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-kK-GdF">
                         <rect key="frame" x="238" y="80" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="plusButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="7Ga-xp-wgX">
@@ -748,8 +758,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">+</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressOperation:" target="c4Q-hW-N8n" id="KkC-19-gbT"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-EM-zRE">
+                    <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-EM-zRE">
                         <rect key="frame" x="159" y="80" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="threeButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="kOC-IC-ogm">
@@ -757,8 +770,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">3</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="w35-6z-IO0"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="325-4T-oXX">
+                    <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="325-4T-oXX">
                         <rect key="frame" x="80" y="80" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="twoButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="zqe-oj-dQN">
@@ -766,8 +782,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">2</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="Y5s-HC-anA"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-43-bdc">
+                    <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-43-bdc">
                         <rect key="frame" x="1" y="80" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="oneButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="ZHy-N4-swD">
@@ -775,8 +794,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">1</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="oMe-tZ-arp"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQU-zZ-JhT">
+                    <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="HQU-zZ-JhT">
                         <rect key="frame" x="238" y="159" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="minusButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="cmO-5O-g58">
@@ -784,8 +806,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">-</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressOperation:" target="c4Q-hW-N8n" id="YJ5-JX-nnP"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xv0-Z1-5UW">
+                    <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="xv0-Z1-5UW">
                         <rect key="frame" x="159" y="159" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="sixButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="AH5-Fr-0iJ">
@@ -793,8 +818,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">6</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="zaQ-62-Hai"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elc-OF-Qoy">
+                    <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="elc-OF-Qoy">
                         <rect key="frame" x="80" y="159" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fiveButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="3K6-I4-a23">
@@ -802,8 +830,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">5</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="oaK-IH-Q86"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-wr-7br">
+                    <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-wr-7br">
                         <rect key="frame" x="1" y="159" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fourButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Zak-cM-ccM">
@@ -811,8 +842,11 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">4</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="B3I-dr-d9S"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQD-LG-aWm">
+                    <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="nQD-LG-aWm">
                         <rect key="frame" x="238" y="238" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="multButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="6uB-Kk-c2z">
@@ -820,32 +854,47 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">*</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressOperation:" target="c4Q-hW-N8n" id="f8O-vg-fPU"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1uI-p3-olA">
+                    <button fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="1uI-p3-olA">
                         <rect key="frame" x="159" y="238" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="nineButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="F6U-ba-83G">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">9</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="wpJ-e2-Kyy"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1z-l8-2T9">
+                    <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="V1z-l8-2T9">
                         <rect key="frame" x="80" y="238" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="eightButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="wch-fM-GLn">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">8</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="WSb-0I-nx3"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJf-UQ-HWr">
+                    <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="ZJf-UQ-HWr">
                         <rect key="frame" x="1" y="238" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="sevenButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="rFI-eg-1Sd">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">7</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNumber:" target="c4Q-hW-N8n" id="rWv-xL-4Jp"/>
+                        </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LM5-fv-i3q">
+                    <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="LM5-fv-i3q">
                         <rect key="frame" x="238" y="317" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="divButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Tad-z1-Uot">
@@ -853,6 +902,9 @@
                             <font key="font" metaFont="system"/>
                             <string key="keyEquivalent">/</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressOperation:" target="c4Q-hW-N8n" id="33h-Hi-xGL"/>
+                        </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="anU-Wx-CQH">
                         <rect key="frame" x="159" y="317" width="80" height="80"/>
@@ -860,7 +912,11 @@
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="percentButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Exm-uz-Wc4">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">%</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressPercent:" target="c4Q-hW-N8n" id="kkP-lF-onv"/>
+                        </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-Sy-epF">
                         <rect key="frame" x="80" y="317" width="80" height="80"/>
@@ -868,7 +924,11 @@
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="negativeButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="7pV-e3-jC0">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">_</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressNegative:" target="c4Q-hW-N8n" id="YJl-Mn-MbJ"/>
+                        </connections>
                     </button>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwq-Xm-Kuh">
                         <rect key="frame" x="1" y="317" width="80" height="80"/>
@@ -876,7 +936,11 @@
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clearButton" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="kEf-wR-g7o">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">c</string>
                         </buttonCell>
+                        <connections>
+                            <action selector="pressClear:" target="c4Q-hW-N8n" id="Zek-br-2Gi"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxX-Ee-WX8">
                         <rect key="frame" x="7" y="417" width="307" height="97"/>

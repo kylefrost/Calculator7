@@ -10,4 +10,16 @@
 
 @interface Math : NSObject
 
++(float)add:(float)current to:(float)original;
+
++(float)multiply:(float)current to:(float)original;
+
++(float)divide:(float)current from:(float)original;
+
++(float)subtract:(float)current from:(float)original;
+
++(float)changeSymbol:(float)input;
+
++(float)makePercentange:(float)input;
+
 @end
