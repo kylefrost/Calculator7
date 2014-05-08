@@ -49,6 +49,31 @@
     
     originalNumber = currentNumber;
     
+    if (currentOperation == 1) {           // Addition
+        [self plusSmall];
+        [self minusBig];
+        [self multBig];
+        [self divBig];
+    }
+    else if (currentOperation == 2) {      // Subtraction
+        [self minusSmall];
+        [self plusBig];
+        [self multBig];
+        [self divBig];
+    }
+    else if (currentOperation == 3) {      // Multiplication
+        [self multSmall];
+        [self plusBig];
+        [self minusBig];
+        [self divBig];
+    }
+    else if (currentOperation == 4) {      // Division
+        [self divSmall];
+        [self plusBig];
+        [self minusBig];
+        [self multBig];
+    }
+    
     isNewNumber = 0;
 }
 
@@ -56,18 +81,22 @@
     
     if (currentOperation == 1) {           // Addition
         result = [Math add:currentNumber to:originalNumber];
+        [self plusBig];
         NSLog(@"Add");
     }
     else if (currentOperation == 2) {      // Subtraction
         result = [Math subtract:currentNumber from:originalNumber];
+        [self minusBig];
         NSLog(@"Subtract");
     }
     else if (currentOperation == 3) {      // Multiplication
         result = [Math multiply:currentNumber to:originalNumber];
+        [self multBig];
         NSLog(@"Multiply");
     }
     else if (currentOperation == 4) {      // Division
         result = [Math divide:currentNumber from:originalNumber];
+        [self divBig];
         NSLog(@"Divide");
     }
     
@@ -85,6 +114,10 @@
     currentOperation = 0;
     originalNumber = 0;
     result = 0;
+    [self plusBig];
+    [self minusBig];
+    [self multBig];
+    [self divBig];
 }
 
 -(IBAction)pressNegative:(id)sender {
@@ -140,6 +173,93 @@
     [myAlert addButtonWithTitle:@"Uh..."];
     [myAlert runModal];
     
+}
+
+/**** Button Sizes ****/
+
+-(void)plusSmall {
+    NSRect newRect = [self.plusButton frame];
+    
+    newRect.size.height = 67;
+    newRect.size.width = 67;
+    newRect.origin.x = 245;
+    newRect.origin.y = 87;
+    
+    self.plusButton.frame = newRect;
+
+}
+-(void)plusBig {
+    NSRect newRect = [self.plusButton frame];
+    
+    newRect.size.height = 80;
+    newRect.size.width = 80;
+    newRect.origin.x = 238;
+    newRect.origin.y = 80;
+    
+    self.plusButton.frame = newRect;
+}
+
+-(void)minusSmall {
+    NSRect newRect = [self.minusButton frame];
+    
+    newRect.size.height = 67;
+    newRect.size.width = 67;
+    newRect.origin.x = 245;
+    newRect.origin.y = 166;
+    
+    self.minusButton.frame = newRect;
+}
+-(void)minusBig {
+    NSRect newRect = [self.minusButton frame];
+    
+    newRect.size.height = 80;
+    newRect.size.width = 80;
+    newRect.origin.x = 238;
+    newRect.origin.y = 159;
+    
+    self.minusButton.frame = newRect;
+}
+
+-(void)multSmall {
+    NSRect newRect = [self.multButton frame];
+    
+    newRect.size.height = 67;
+    newRect.size.width = 67;
+    newRect.origin.x = 245;
+    newRect.origin.y = 245;
+    
+    self.multButton.frame = newRect;
+}
+-(void)multBig {
+    NSRect newRect = [self.multButton frame];
+    
+    newRect.size.height = 80;
+    newRect.size.width = 80;
+    newRect.origin.x = 238;
+    newRect.origin.y = 238;
+    
+    self.multButton.frame = newRect;
+}
+
+-(void)divSmall {
+    NSRect newRect = [self.divButton frame];
+    
+    newRect.size.height = 67;
+    newRect.size.width = 67;
+    newRect.origin.x = 245;
+    newRect.origin.y = 324;
+    
+    self.divButton.frame = newRect;
+}
+-(void)divBig {
+    NSRect newRect = [self.divButton frame];
+    
+    newRect.size.height = 80;
+    newRect.size.width = 80;
+    newRect.origin.x = 238;
+    newRect.origin.y = 317;
+    
+    self.divButton.frame = newRect;
 }
 
 @end

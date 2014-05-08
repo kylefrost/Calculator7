@@ -18,6 +18,11 @@
     
 }
 
+@property (strong, nonatomic) IBOutlet NSButton *plusButton;
+@property (strong, nonatomic) IBOutlet NSButton *minusButton;
+@property (strong, nonatomic) IBOutlet NSButton *multButton;
+@property (strong, nonatomic) IBOutlet NSButton *divButton;
+
 -(IBAction)pressOperation:(id)sender;
 -(IBAction)pressEqual:(id)sender;
 

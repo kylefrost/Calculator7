@@ -20,6 +20,10 @@
         <viewController id="c4Q-hW-N8n" customClass="ViewController">
             <connections>
                 <outlet property="calculatorScreen" destination="gxX-Ee-WX8" id="wfu-w2-dRL"/>
+                <outlet property="divButton" destination="LM5-fv-i3q" id="w98-ex-pvS"/>
+                <outlet property="minusButton" destination="HQU-zZ-JhT" id="rRL-VO-9q2"/>
+                <outlet property="multButton" destination="nQD-LG-aWm" id="TpK-Oj-JwZ"/>
+                <outlet property="plusButton" destination="7IF-kK-GdF" id="WI0-yG-3fh"/>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="AOy-YB-f68"/>
             </connections>
         </viewController>
