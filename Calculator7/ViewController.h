@@ -32,4 +32,6 @@
 -(IBAction)clickCloseButton:(id)sender;
 -(IBAction)clickMinimizeButton:(id)sender;
 
+-(IBAction)clickHelp:(id)sender;
+
 @end

@@ -125,11 +125,11 @@
 				27F3AE1F191ACB3E004A24C6 /* AppDelegate.m */,
 				27F3AE21191ACB3E004A24C6 /* MainMenu.xib */,
 				27F3AE24191ACB3E004A24C6 /* Images.xcassets */,
-				27F3AE13191ACB3E004A24C6 /* Supporting Files */,
 				27F3AE40191ACB53004A24C6 /* Math.h */,
 				27F3AE41191ACB53004A24C6 /* Math.m */,
 				27F3AE43191ACD48004A24C6 /* ViewController.h */,
 				27F3AE44191ACD48004A24C6 /* ViewController.m */,
+				27F3AE13191ACB3E004A24C6 /* Supporting Files */,
 			);
 			path = Calculator7;
 			sourceTree = "<group>";
@@ -478,6 +478,7 @@
 				27F3AE3C191ACB3E004A24C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27F3AE3D191ACB3E004A24C6 /* Build configuration list for PBXNativeTarget "Calculator7Tests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +487,7 @@
 				27F3AE3F191ACB3E004A24C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -132,4 +132,14 @@
     
 }
 
+-(IBAction)clickHelp:(id)sender {
+    
+    NSAlert *myAlert = [[NSAlert alloc] init];
+    [myAlert setInformativeText:@"You really need help for a calculator?"];
+    [myAlert setMessageText:@"So..."];
+    [myAlert addButtonWithTitle:@"Uh..."];
+    [myAlert runModal];
+    
+}
+
 @end
